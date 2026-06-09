@@ -1,0 +1,64 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Gradle version catalog — single source of truth for plugin/library versions.
+#
+# The BeNomad mSDK version is the ONE constant a client usually changes (`msdk`).
+# All mSDK artifacts live in the group `com.benomad.sdk` and are pulled from the
+# Nexus repository configured in settings.gradle.kts (credentials in local.properties).
+# ─────────────────────────────────────────────────────────────────────────────
+[versions]
+agp = "8.13.0"
+kotlin = "2.2.20"
+
+# BeNomad mobile SDK. NOTE: the exact coordinate depends on the publish branch:
+#   release  -> "2.7.0.1"        beta -> "2.7.0.1-beta"        develop -> "2.6.1.2-SNAPSHOT"
+# Set this to whatever your Nexus actually hosts.
+msdk = "2.6.1.2-SNAPSHOT"
+
+coreKtx = "1.15.0"
+appcompat = "1.7.0"
+activityCompose = "1.9.0"
+lifecycle = "2.8.1"
+composeBom = "2024.09.02"
+navigationCompose = "2.8.0"
+coroutines = "1.9.0"
+desugar = "2.1.5"
+
+[libraries]
+# --- BeNomad mSDK modules (declare every module you reference: inter-module deps are NOT transitive) ---
+msdk-error-manager   = { module = "com.benomad.sdk:error-manager",   version.ref = "msdk" }
+msdk-core            = { module = "com.benomad.sdk:core",            version.ref = "msdk" }
+msdk-maps            = { module = "com.benomad.sdk:maps",            version.ref = "msdk" }
+msdk-geocoder        = { module = "com.benomad.sdk:geocoder",        version.ref = "msdk" }
+msdk-gps-manager     = { module = "com.benomad.sdk:gps-manager",     version.ref = "msdk" }
+msdk-vehicle-manager = { module = "com.benomad.sdk:vehicle-manager", version.ref = "msdk" }
+msdk-planner         = { module = "com.benomad.sdk:planner",         version.ref = "msdk" }
+msdk-navigation      = { module = "com.benomad.sdk:navigation",      version.ref = "msdk" }
+
+# --- AndroidX ---
+androidx-core-ktx                  = { module = "androidx.core:core-ktx",                          version.ref = "coreKtx" }
+androidx-appcompat                 = { module = "androidx.appcompat:appcompat",                    version.ref = "appcompat" }
+androidx-activity-compose          = { module = "androidx.activity:activity-compose",             version.ref = "activityCompose" }
+androidx-lifecycle-runtime-ktx     = { module = "androidx.lifecycle:lifecycle-runtime-ktx",       version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidx-lifecycle-process         = { module = "androidx.lifecycle:lifecycle-process",           version.ref = "lifecycle" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose",   version.ref = "lifecycle" }
+androidx-navigation-compose        = { module = "androidx.navigation:navigation-compose",         version.ref = "navigationCompose" }
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# --- Compose (versions via BOM) ---
+compose-bom                     = { module = "androidx.compose:compose-bom",                version.ref = "composeBom" }
+compose-ui                      = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics             = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling              = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview      = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-material3               = { module = "androidx.compose.material3:material3" }
+compose-material-icons-extended = { module = "androidx.compose.material:material-icons-extended" }
+
+# --- Build ---
+desugar-jdk-libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar" }
+
+[plugins]
+android-application = { id = "com.android.application",                version.ref = "agp" }
+kotlin-android      = { id = "org.jetbrains.kotlin.android",           version.ref = "kotlin" }
+kotlin-compose      = { id = "org.jetbrains.kotlin.plugin.compose",    version.ref = "kotlin" }

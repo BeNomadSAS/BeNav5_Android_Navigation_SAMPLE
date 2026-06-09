@@ -1,0 +1,41 @@
+{
+  "_comment": "Editable vehicle profiles imported by the sample at runtime (see route/VehicleProfileRepository). Units: distances in METRES, weights in METRIC TONNES, speed in KM/H. transportationMode is one of the mSDK TranspMode names: PASSENGER_CAR, DELIVERY_TRUCK, PEDESTRIAN, BICYCLE, TAXI, PUBLIC_BUS, MOTORCYCLE. Truck dimensions/weights are only honoured when transportationMode is a truck mode AND the license allows it. nbTrailers: 0 = no trailers; avoid -1 (the SDK 'unset' sentinel).",
+  "profiles": [
+    {
+      "id": "car",
+      "name": "Car",
+      "transportationMode": "PASSENGER_CAR"
+    },
+    {
+      "id": "light_truck",
+      "name": "Light truck",
+      "transportationMode": "DELIVERY_TRUCK",
+      "heightM": 2.0,
+      "lengthM": 5.0,
+      "widthM": 2.0,
+      "weightT": 4.5,
+      "weightPerAxleT": 2.5,
+      "nbTrailers": 0,
+      "maxSpeedKmh": 120.0,
+      "majorRoads": true
+    },
+    {
+      "id": "heavy_truck",
+      "name": "Heavy truck",
+      "transportationMode": "DELIVERY_TRUCK",
+      "heightM": 4.0,
+      "lengthM": 18.0,
+      "widthM": 2.6,
+      "weightT": 40.0,
+      "weightPerAxleT": 8.0,
+      "nbTrailers": 1,
+      "maxSpeedKmh": 90.0,
+      "majorRoads": true
+    },
+    {
+      "id": "pedestrian",
+      "name": "Pedestrian",
+      "transportationMode": "PEDESTRIAN"
+    }
+  ]
+}

@@ -1,0 +1,2151 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE GRAPHIC_CHART SYSTEM "dtd/SVSGraphicChart-1.5.dtd">
+<GRAPHIC_CHART name="" scale_ref="100000">
+ <ZOOM mode="continuous"/>
+ <BACKGROUND>
+  <!--BRUSH style="solid" color="Hd9dddf"/-->
+	<BRUSH style="solid" color="HE3E3E3"/>
+ </BACKGROUND>
+ <DEFAULT_FONT>
+  <FONT name="Tahoma" height="15" weight="bold"/>
+ </DEFAULT_FONT>
+ <CLASSES>
+  <CLASS id="cxxxx" name="Default" visibility="no">
+   <FORM type="closed" scale_validity="0.000:125.000">
+    <PEN style="solid" width="1" color="H784678"/>
+    <BRUSH style="solid" color="HF0F0F0" transparent="yes"/>
+   </FORM>
+   <FORM type="rect" scale_validity="0.000:250.000">
+    <PEN style="solid" width="1" color="H000000"/>
+   </FORM>
+   <FORM type="ellipse">
+    <PEN style="solid" width="1" color="H000000"/>
+   </FORM>
+   <FORM type="complex">
+    <PEN style="solid" width="1" color="H000000"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:250.000">
+    <PEN style="solid" width="1" color="H000000"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:5.000">
+    <BRUSH style="image" src="img/info.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1110" name="Continent" scale_visibility="500.000:0.000">
+   <FORM type="closed" scale_validity="1500.000:0.000">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="16" weight="bold"/>
+    </TEXT>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:1500.000">
+    <!--TEXT>
+     <FONT name="Tahoma" height="16" weight="bold"/>
+    </TEXT-->
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1111" name="Country" scale_visibility="60.000:0.000">
+   <FORM type="closed" scale_validity="2500.000:0.000">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="20" weight="bold" color="HB0404040"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="HB6B2AC"/>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+   <FORM type="closed" scale_validity="72.000:2500.000">
+    <PEN style="solid" width="2" color="HB6B2AC"/>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+   <FORM type="closed" scale_validity="60.000:180.000" att_condition="1 &gt; 1118">
+    <!--TEXT >
+     <FONT name="Tahoma" height="20" weight="bold" color="H404040"/>
+    </TEXT-->
+    <PEN style="solid" width="2" color="HB6B2AC"/>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1112" name="1st administrative level" scale_visibility="180.000:1500.000">
+   <FORM type="closed" scale_validity="900.000:0.000">
+    <PEN style="solid" width="1" color="HC9D1C9"/>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+   <FORM type="closed" scale_validity="180.000:900.000">
+    <!--TEXT >
+     <FONT name="Tahoma" height="16" weight="bold" color="H404040"/>
+    </TEXT-->
+    <PEN style="solid" width="1" color="HC9D1C9"/>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1118" name="2nd administrative level" scale_visibility="60.000:180.000">
+   <FORM type="closed">
+    <!--TEXT >
+     <FONT name="Tahoma" height="14" weight="bold" color="H404040"/>
+    </TEXT-->
+    <PEN style="solid" width="1" color="HC9D1C9"/>
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1119" name="City" visibility="no" scale_visibility="0.000:60.000">
+   <FORM type="closed">
+    <BRUSH style="solid" color="H1F2020"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1120" name="Sub-City" visibility="no">
+   <FORM type="rect" visibility="no">
+    <PEN style="solid" width="1" color="H000000"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1150" name="Postal district" visibility="no">
+   <FORM type="rect">
+    <PEN style="solid" width="1" color="H000000"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1250" name="Country border" visibility="no" scale_visibility="0.000:60.000">
+   <FORM type="open">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="16" weight="bold"/>
+    </TEXT>
+    <PEN style="dashdot" width="5" color="H000000"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1300" name="Built-up area 1" visibility="no" scale_visibility="0.000:180.000">
+   <FORM type="closed">
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1310" name="Built-up area 2" visibility="no" scale_visibility="0.000:90.000">
+   <FORM type="closed">
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c1320" name="Built-up area 3" visibility="no" scale_visibility="0.000:30.000">
+   <FORM type="closed">
+    <BRUSH style="solid" color="HE3E3E3"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c2000" name="Land usage" scale_visibility="0.000:50.000">
+   <FORM type="closed" name="Park or garden" scale_validity="2.500:0.000" att_condition="1 == 7170">
+    <BRUSH style="solid" color="HB6E59E"/>
+   </FORM>
+   <FORM type="closed" name="Open parking area" scale_validity="0.500:7.500" att_condition="1 == 7369">
+    <BRUSH style="solid" color="HDCD9D6"/>
+   </FORM>
+   <FORM type="closed" name="Shopping centre" scale_validity="0.500:7.500" att_condition="1 == 7373">
+    <BRUSH style="solid" color="HDCD9D6"/>
+   </FORM>
+   <FORM type="closed" name="University or college" scale_validity="1.250:7.500" att_condition="1 == 7377">
+    <BRUSH style="solid" color="HF0E7BC"/>
+   </FORM>
+   <FORM type="closed" name="Military base" scale_validity="2.500:17.500" att_condition="1 == 9053">
+    <BRUSH style="solid" color="HE6E8F1"/>
+   </FORM>
+   <FORM type="closed" name="Sports centre" scale_validity="1.250:7.500" att_condition="1 == 9124">
+    <BRUSH style="solid" color="HD6D8E1"/>
+   </FORM>
+   <FORM type="closed" name="Industrial area" scale_validity="2.500:0.000" att_condition="1 == 9715">
+    <BRUSH style="solid" color="HD6D8E1"/>
+   </FORM>
+   <FORM type="closed" name="Industrial harbour area" scale_validity="2.500:0.000" att_condition="1 == 9720">
+    <BRUSH style="solid" color="HDCD9D6"/>
+   </FORM>
+   <FORM type="closed" name="Park or garden" scale_validity="0.000:2.500" att_condition="1 == 7170">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H6B9A53"/>
+    </TEXT>
+    <BRUSH style="solid" color="HB6E59E"/>
+   </FORM>
+   <FORM type="closed" name="Open parking area" scale_validity="0.000:0.500" att_condition="1 == 7369">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HDCD9D6"/>
+   </FORM>
+   <FORM type="closed" name="Shopping centre" scale_validity="0.000:0.500" att_condition="1 == 7373">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HDCD9D6"/>
+   </FORM>
+   <FORM type="closed" name="University or college" scale_validity="0.000:1.250" att_condition="1 == 7377">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HF0E7BC"/>
+   </FORM>
+   <FORM type="closed" name="Military base" scale_validity="0.000:2.500" att_condition="1 == 9053">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HE6E8F1"/>
+   </FORM>
+   <FORM type="closed" name="Sports centre" scale_validity="0.000:1.250" att_condition="1 == 9124">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HD6D8E1"/>
+   </FORM>
+   <FORM type="closed" name="Industrial area" scale_validity="0.000:2.500" att_condition="1 == 9715">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HD6D8E1"/>
+   </FORM>
+   <FORM type="closed" name="Industrial harbour area" scale_validity="0.000:2.500" att_condition="1 == 9720">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H404040"/>
+    </TEXT>
+    <BRUSH style="solid" color="HDCD9D6"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3000" name="Land coverage" scale_visibility="0.000:180.000">
+   <FORM type="closed" name="Wood land" scale_validity="7.500:0.000" att_condition="1 == 7120">
+    <BRUSH style="solid" color="HBFE5CE"/>
+   </FORM>
+   <FORM type="closed" name="Beach or dune or sand" scale_validity="0.000:100.000" att_condition="1 == 9710">
+    <BRUSH style="solid" color="HFDEDCF"/>
+   </FORM>
+   <FORM type="closed" name="Moor or heath land" scale_validity="0.000:0.000" att_condition="1 == 9725">
+    <BRUSH style="solid" color="HC6E8AE"/>
+   </FORM>
+   <FORM type="closed" name="Wood land" scale_validity="0.000:7.500" att_condition="1 == 7120">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H6B9A53"/>
+    </TEXT>
+    <BRUSH style="solid" color="HBFE5CE"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3700" name="Sea/Ocean" scale_visibility="0.000:0.000">
+   <FORM type="closed" scale_validity="5.000:0.000">
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:5.000">
+    <TEXT>
+     <FONT name="Tahoma" height="18" weight="normal" color="HBDEEFF"/>
+    </TEXT>
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3710" name="Water element 2" scale_visibility="0.000:180.000">
+   <FORM type="closed" scale_validity="12.500:0.000">
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:12.500">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="normal" color="H578CCA"/>
+    </TEXT>
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="open" scale_validity="12.500:0.000">
+    <PEN style="solid" width="30" unit="real" color="H75CFF0"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:12.500">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H578CCA"/>
+    </TEXT>
+    <PEN style="solid" width="30" unit="real" color="H75CFF0"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3720" name="Water element 3" scale_visibility="0.000:90.000">
+   <FORM type="closed" scale_validity="12.500:0.000">
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:12.500">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="13" weight="normal" color="H578CCA"/>
+    </TEXT>
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="open" scale_validity="6.250:0.000">
+    <PEN style="solid" width="14" unit="real" color="H75CFF0"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:6.250">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H578CCA"/>
+    </TEXT>
+    <PEN style="solid" width="14" unit="real" color="H75CFF0"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3730" name="Water element 4" scale_visibility="0.000:18.000">
+   <FORM type="closed" scale_validity="2.500:0.000">
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="12" weight="normal" color="H578CCA"/>
+    </TEXT>
+    <BRUSH style="solid" color="H75CFF0"/>
+   </FORM>
+   <FORM type="open" scale_validity="1.250:0.000">
+    <PEN style="solid" width="6" unit="real" color="H75CFF0"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H578CCA"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="H75CFF0"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3850" name="Airport contour, ports" scale_visibility="0.000:45.000">
+   <FORM type="closed" scale_validity="7.500:0.000">
+    <BRUSH style="solid" color="H80D5DAE2"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:7.500">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <!--PEN style="solid" width="1" color="H83B81A"/-->
+    <BRUSH style="solid" color="H80D5DAE2"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3851" name="Aircraft roads" scale_visibility="0.000:75.000">
+   <FORM type="closed" scale_validity="5.000:0.000">
+    <BRUSH style="solid" color="HC7CADC"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:5.000">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <!--PEN style="solid" width="7" unit="real" color="HD7D3D7"/-->
+    <BRUSH style="solid" color="HC7CADC"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3900" name="Building contour" scale_visibility="0.000:3.000">
+   <FORM type="closed" scale_validity="1.000:0.000">
+    <BRUSH style="solid" color="HDCD9D6"/>
+    <PEN style="solid" color="HB9B9B9"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:1.000">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="13" weight="normal"/>
+    </TEXT>
+    <BRUSH style="solid" color="HDCD9D6"/>
+    <PEN style="solid" color="HB9B9B9"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3950" name="Meridians" scale_visibility="250.000:0.000">
+   <FORM type="open">
+    <TEXT outline_color="HF8F8F8">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <PEN style="dash" width="1" color="HFEFEF6"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c3998" name="RailRoad" scale_visibility="0.000:6.250">  
+   <FORM type="open">
+    <PEN style="dash" width="1" color="HC7C8CD"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4000" name="Fourth - Pedestrian" scale_visibility="0.000:2.500">
+   <FORM type="open">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4016" name="Fourth - Roundabout" scale_visibility="0.000:5.000">
+   <FORM type="open" scale_validity="3.000:0.000">
+    <PEN style="solid" width="1" color="HF8F8F8"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.500:3.000">
+    <PEN style="solid" width="2" color="HF8F8F8"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="7" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="7" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4032" name="Fourth - Slip road" scale_visibility="0.000:5.000">
+   <FORM type="open" scale_validity="3.000:0.000">
+    <PEN style="solid" width="1" color="HF8F8F8"/>
+   </FORM>
+   <FORM type="open" scale_validity="1.750:3.000">
+    <PEN style="solid" width="1" color="HF8F8F8"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.750">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" arrow_width="7" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" arrow_width="7" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4048" name="Fourth" scale_visibility="0.000:7.500">
+   <FORM type="open" scale_validity="3.000:0.000">
+    <PEN style="solid" width="1" color="HF8F8F8"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.500:3.000">
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="7" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="7" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4064" name="Fourth - Motorway" scale_visibility="0.000:3.750">
+   <FORM type="open" scale_validity="3.330:0.000">
+    <TEXT fill_color="HCC2929" border="HFFFFFF" att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFA35C"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:3.330">
+    <TEXT fill_color="HCC2929" border="HFFFFFF"  att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="10" unit="real" color="HFFA35C" border="HFFFFFF"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4080" name="Fourth - Ferry" scale_visibility="0.000:5.000">
+   <FORM type="open" scale_validity="2.500:0.000">
+    <PEN style="dash" width="1" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8" att_code="21074" alt_att_code="20306" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="dash" width="2" color="H6BA9EC"/>
+   </FORM>
+   <!--FORM type="open" scale_validity="0.000:1.000" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <PEN style="dash" width="2" color="H00B8D4" arrow_width="5" arrow_dir="to" rrow_color="H408080" arrow_filled="yes"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.000" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <PEN style="dash" width="2" color="H00B8D4" arrow_width="5" arrow_dir="from" arrow_color="H408080" arrow_filled="yes"/>
+   </FORM-->
+  </CLASS>
+  <CLASS id="c4096" name="Fourth off road" scale_visibility="0.000:3.000">
+   <FORM type="open" scale_validity="2.500:0.000">
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="7" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="7" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4256" name="Tertiary - Pedestrian" scale_visibility="0.000:7.500">
+   <FORM type="open">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="12" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4272" name="Tertiary - Roundabout" scale_visibility="0.000:50.000">
+   <FORM type="open" scale_validity="50.000:0.000" att_condition="21590 &amp; H80000">  
+    <PEN style="solid" width="1" color="HF8F8F8"/>
+   </FORM>		
+   <FORM type="open" scale_validity="12.500:50.000" att_condition="21590 &amp; H80000">  
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>		
+   <FORM type="open" scale_validity="2.500:12.500" att_condition="21590 &amp; H80000">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="7.500:50.000">
+    <PEN style="solid" width="1" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.500:7.500">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="9" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="9" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4288" name="Tertiary - Slip road" scale_visibility="0.000:50.000">
+   <FORM type="open" scale_validity="4.000:0.000" >
+    <PEN style="solid" width="1" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:4.000">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" arrow_width="9" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="4" unit="real" color="HFFFFFF" arrow_width="9" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4304" name="Tertiary" scale_visibility="0.000:75.000">
+   <FORM type="open" scale_validity="50.000:0.000" att_condition="21590 &amp; H80000">  
+    <PEN style="solid" width="1" color="HF8F8F8"/>
+   </FORM>		
+   <FORM type="open" scale_validity="12.500:50.000" att_condition="21590 &amp; H80000">  
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>		
+   <FORM type="open" scale_validity="2.500:12.500" att_condition="21590 &amp; H80000">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="7.500:50.000">
+    <PEN style="solid" width="1" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.500:7.500">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="9" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="9" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4320" name="Tertiary - Motorway" scale_visibility="0.000:50.000">
+   <FORM type="open" scale_validity="3.330:0.000">
+    <TEXT fill_color="HCC2929" border="HFFFFFF" att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFA35C"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:3.330">
+    <TEXT fill_color="HCC2929" border="HFFFFFF"  att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="10" unit="real" color="HFFA35C" border="HFFFFFF"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4336" name="Tertiary - Ferry" scale_visibility="0.000:50.000">
+   <FORM type="open" scale_validity="7.500:0.000">
+    <PEN style="solid" width="1" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:7.500">
+    <TEXT outline_color="HF8F8F8" att_code="21074" alt_att_code="20306" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="1" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.000" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC" arrow_width="5" arrow_dir="to" arrow_color="H00B5DD" arrow_filled="yes"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.000" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC" arrow_width="5" arrow_dir="from" arrow_color="H00B5DD" arrow_filled="yes"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4512" name="Secondary - Pedestrian" scale_visibility="0.000:7.500">
+   <FORM type="open">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="13" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4528" name="Secondary - Roundabout" scale_visibility="0.000:17.500">
+   <FORM type="open" scale_validity="75.000:0.000">  
+    <PEN style="solid" width="2" color="HF4F4F4"/>
+   </FORM>		
+   <FORM type="open" scale_validity="7.500:75.000" >
+    <TEXT fill_color="HFFFFFF" border="H000000" att_code="21074">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.000:7.500">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.000">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="10" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="10" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4544" name="Secondary - Slip road" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="7.500:0.000">
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.500:7.500">
+    <PEN style="solid" width="2" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" arrow_width="9" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <PEN style="solid" width="5" unit="real" color="HFFFFFF" arrow_width="9" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4560" name="Secondary" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="75.000:0.000">  
+    <PEN style="solid" width="2" color="HF4F4F4"/>
+   </FORM>		
+   <FORM type="open" scale_validity="7.500:75.000" >
+    <TEXT fill_color="HFFFFFF" border="H000000" att_code="21074">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.000:7.500">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.000">
+    <TEXT outline_color="HF8F8F8" alt_att_code="21074" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="HFFFFFF" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="10" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.750" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="6" unit="real" color="HFFFFFF" border="HB3B3B3" arrow_width="10" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4576" name="Secondary - Motorway" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="3.330:0.000">
+    <TEXT fill_color="HCC2929" border="HFFFFFF" att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFA35C"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:3.330">
+    <TEXT fill_color="HCC2929" border="HFFFFFF"  att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="10" unit="real" color="HFFA35C" border="HFFFFFF"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4592" name="Secondary - Ferry" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="10.000:0.000">
+    <PEN style="solid" width="1" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:10.000">
+    <TEXT outline_color="HF8F8F8" att_code="21074" alt_att_code="20306" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="1" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC" arrow_width="5" arrow_dir="to" arrow_color="H00B5DD" arrow_filled="yes"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC" arrow_width="5" arrow_dir="from" arrow_color="H00B5DD" arrow_filled="yes"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4768" name="Main - Pedestrian" scale_visibility="0.000:12.500">
+   <FORM type="open">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="to" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:0.500" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="14" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN width="2" unit="real" color="HF0F0F0" border="HB3B3B3" arrow_width="5" arrow_dir="from" arrow_color="HB3B3B3" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4784" name="Main - Roundabout" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="30.000:0.000">
+    <PEN style="solid" width="3" color="HF2D163"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.670:30.000">
+    <TEXT fill_color="HFFFFFF" border="H000000" att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HF2D163"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.670">
+    <TEXT outline_color="HF8F8F8" angle="auto" alt_att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="8" unit="real" color="HF2D163" border="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.000" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto" alt_att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="8" unit="real" color="HF2D163" border="HFFFFFF" arrow_width="12" arrow_dir="to" arrow_color="HFFFFFF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.000" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto" alt_att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="8" unit="real" color="HF2D163" border="HFFFFFF" arrow_width="12" arrow_dir="from" arrow_color="HFFFFFF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4800" name="Main - Slip road" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="3.500:0.000">
+    <PEN style="solid" width="2" color="HF2D163"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:3.500">
+    <PEN style="solid" width="7" unit="real" color="HF2D163"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.500" att_condition="17482 == 1">
+    <PEN style="solid" width="7" unit="real" color="HF2D163" arrow_width="12" arrow_dir="to" arrow_color="HFFFFFF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.500" att_condition="17482 == 2">
+    <PEN style="solid" width="7" unit="real" color="HF2D163" arrow_width="12" arrow_dir="from" arrow_color="HFFFFFF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4816" name="Main" scale_visibility="0.000:375.000">
+   <FORM type="open" scale_validity="30.000:0.000">
+    <PEN style="solid" width="3" color="HF2D163"/>
+   </FORM>
+   <FORM type="open" scale_validity="2.670:30.000">
+    <TEXT fill_color="HFFFFFF" border="H000000" att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HF2D163"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.670">
+    <TEXT outline_color="HF8F8F8" angle="auto" alt_att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="8" unit="real" color="HF2D163" border="HFFFFFF"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.000" att_condition="17482 == 1">
+    <TEXT outline_color="HF8F8F8" angle="auto" alt_att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="8" unit="real" color="HF2D163" border="HFFFFFF" arrow_width="12" arrow_dir="to" arrow_color="HFFFFFF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.000" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto" alt_att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="H000000"/>
+    </TEXT>
+    <PEN style="solid" width="8" unit="real" color="HF2D163" border="HFFFFFF" arrow_width="12" arrow_dir="from" arrow_color="HFFFFFF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4832" name="Main - Motorway" scale_visibility="0.000:115.000">
+   <FORM type="open" scale_validity="3.330:0.000">
+    <TEXT fill_color="HCC2929" border="HFFFFFF" att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFA35C"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:3.330">
+    <TEXT fill_color="HCC2929" border="HFFFFFF"  att_code="21074">
+     <FONT name="Tahoma" height="16" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="10" unit="real" color="HFFA35C" border="HFFFFFF"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c4848" name="Main - Ferry" scale_visibility="0.000:150.000">
+   <FORM type="open" scale_validity="30.000:0.000">
+    <PEN style="solid" width="2" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:30.000">
+    <TEXT outline_color="HF8F8F8" att_code="21074" alt_att_code="20306" angle="auto">
+     <FONT name="Tahoma" height="15" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.000" att_condition="17482 == 1">
+    <TEXT border="HFFFFFF" angle="auto">
+     <FONT name="Tahoma" height="15" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC" arrow_width="5" arrow_dir="to" arrow_color="H00B5DD" arrow_filled="yes"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.000" att_condition="17482 == 2">
+    <TEXT outline_color="HF8F8F8" angle="auto">
+     <FONT name="Tahoma" height="15" weight="normal" color="H4B72BC"/>
+    </TEXT>
+    <PEN style="solid" width="2" color="H6BA9EC" arrow_width="5" arrow_dir="from" arrow_color="H00B5DD" arrow_filled="yes"/>
+   </FORM>
+  </CLASS>  
+    <CLASS id="c6900" name="Navigation Route">
+      <FORM type="open" scale_validity="3.500:0.000" att_condition="0 == 0">
+        <PEN style="solid" width="7" color="HE0008AC9"/>
+      </FORM>
+      <FORM type="open" scale_validity="3.500:0.000">
+        <PEN style="solid" width="5" color="HE0008AC9"/>
+      </FORM>
+      <FORM type="open" scale_validity="1.143:3.500" att_condition="0 == 0">
+        <PEN style="solid" width="7" color="HE0008AC9" arrow_width="3" arrow_dir="to" arrow_color="HF0F0FF" arrow_filled="yes" arrow_style="with_shaft"/>
+      </FORM>
+      <FORM type="open" scale_validity="1.600:3.500">
+        <PEN style="solid" width="5" color="HE0008AC9"/>
+      </FORM>
+      <FORM type="open" scale_validity="0.000:1.143" att_condition="0 == 0">
+        <PEN style="solid" width="8" unit="real" color="HE0008AC9"/>
+      </FORM>
+      <FORM type="open" scale_validity="0.000:1.600">
+        <PEN style="solid" width="8" unit="real" color="HE0008AC9"/>
+      </FORM>
+    </CLASS>
+    <CLASS id="c6901" name="Route Manoeuvre">
+      <FORM type="open" scale_validity="2.000:0.000">
+        <PEN style="solid" width="2" color="H00C3F8" border="HFFFFFF" arrow_width="8" arrow_dir="to" arrow_color="H00C3F8" arrow_filled="yes" arrow_pos="end"/>
+      </FORM>
+      <FORM type="open" scale_validity="0.000:2.000">
+        <PEN style="solid" width="4" unit="real" color="H00C3F8" border="HFFFFFF" arrow_width="16" arrow_dir="to" arrow_unit="real" arrow_color="H00C3F8" arrow_filled="yes" arrow_pos="end"/>
+      </FORM>
+    </CLASS>
+    <!--
+  <CLASS id="c6903" name="Calculated Route">
+   <FORM type="open" scale_validity="3.500:0.000">
+    <PEN style="solid" width="5" color="H288A41"/>
+   </FORM>
+   <FORM type="open" scale_validity="1.600:3.500">
+    <PEN style="solid" width="5" color="H288A41" arrow_width="3" arrow_dir="to" arrow_color="HF0F0FF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:1.600">
+    <PEN style="solid" width="8" unit="real" color="H288A41" arrow_width="4" arrow_dir="to" arrow_unit="real" arrow_color="HF0F0FF" arrow_filled="yes" arrow_style="with_shaft"/>
+   </FORM>
+  </CLASS>
+  -->
+  
+  <CLASS id="c6903" name="Circuit Route">
+	  <FORM type="open" scale_validity="1.400:0.000" att_condition="0 == 0">
+		<PEN style="solid" width="5" color="H288A41" half_width="right"/>
+	  </FORM>
+	  <FORM type="open" scale_validity="1.000:1.400" att_condition="0 == 0">
+		<PEN style="solid" width="5" color="H288A41" half_width="right"/>
+	  </FORM>
+	  <FORM type="open" scale_validity="0.000:1.000" att_condition="0 == 0">
+		<PEN style="solid" width="5" unit="real" color="H288A41" half_width="right"/>
+	  </FORM>
+	  <FORM type="open" scale_validity="1.400:0.000" att_condition="0 == 1">
+		<PEN style="solid" width="5" color="H288A41" half_width="left"/>
+	  </FORM>
+	  <FORM type="open" scale_validity="1.000:1.400" att_condition="0 == 1">
+		<PEN style="solid" width="5" color="H288A41" half_width="left"/>
+	  </FORM>
+	  <FORM type="open" scale_validity="0.000:1.000" att_condition="0 == 1">
+		<PEN style="solid" width="5" unit="real" color="H288A41" half_width="left"/>
+	  </FORM>
+	</CLASS>
+
+  <CLASS id="c6904" name="Blocked Route">
+    <FORM type="open" scale_validity="3.500:0.000">
+      <PEN style="solid" width="3" color="HB0F01000"/>
+    </FORM>
+    <FORM type="open" scale_validity="2.500:3.500">
+      <PEN style="solid" width="3" color="HB0F01000" arrow_width="5" arrow_dir="to" arrow_color="HB0F01000" arrow_filled="yes" arrow_style="with_shaft"/>
+    </FORM>
+    <FORM type="open" scale_validity="0.000:2.500">
+      <PEN style="solid" width="6" unit="real" color="HB0F01000" arrow_width="10" arrow_dir="to" arrow_unit="real" arrow_color="HB0F01000" arrow_filled="yes" arrow_style="with_shaft"/>
+    </FORM>
+  </CLASS>
+  <CLASS id="c6905" name="Closed Roads">
+   <FORM type="open" scale_validity="2.500:0.000">
+    <PEN style="solid" width="3" color="HA0A0A0" center="HF00000"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:2.500">
+    <PEN style="solid" width="3" unit="real" color="HA0A0A0" center="HF00000"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6906" name="Dot Road">
+   <FORM type="open">
+    <PEN style="dash" width="3" color="H00C0FF"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6907" name="Energetic Road">
+   <FORM type="open" att_condition="1 == 0">
+    <PEN style="solid" width="7" color="HC30000"/>
+   </FORM>
+   <FORM type="open" att_condition="1 == 1">
+    <PEN style="solid" width="7" color="H000000"/>
+   </FORM>
+   <FORM type="open" att_condition="1 == 2">
+    <PEN style="solid" width="7" color="H008000"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6910" name="Traffic flow affect" scale_visibility="0.000:80.000">
+   <FORM type="open" name="Normal traffic" scale_validity="0.500:12.500" att_condition="1 == 0">
+    <PEN style="solid" width="2" color="H16E097" border="H0B9B6B" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Normal traffic" scale_validity="0.500:12.500" att_condition="1 == 10">
+    <PEN style="solid" width="2" color="H16E097" border="H0B9B6B" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Low traffic" scale_validity="0.500:25.000" att_condition="1 == 11">
+    <PEN style="solid" width="2" color="HFFCE42" border="HF4BF25" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Low traffic" scale_validity="0.500:25.000" att_condition="1 == 1">
+    <PEN style="solid" width="2" color="HFFCE42" border="HF4BF25" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Medium traffic" scale_validity="0.500:50.000" att_condition="1 == 2">
+    <PEN style="solid" width="2" color="HF24E42" border="H95413A" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Medium traffic" scale_validity="0.500:50.000" att_condition="1 == 12">
+    <PEN style="solid" width="2" color="HF24E42" border="H95413A" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="High traffic" scale_validity="0.500:0.000" att_condition="1 == 3">
+    <PEN style="solid" width="2" color="HA82626" border="H6F2121" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="High traffic" scale_validity="0.500:0.000" att_condition="1 == 13">
+    <PEN style="solid" width="2" color="HA82626" border="H6F2121" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Blocked traffic" scale_validity="0.500:0.000" att_condition="1 == 4">
+    <PEN style="solid" width="2" color="H303030" border="H202020" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Blocked traffic" scale_validity="0.500:0.000" att_condition="1 == 14">
+    <PEN style="solid" width="2" color="H303030" border="H202020" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Normal traffic" scale_validity="0.000:0.500" att_condition="1 == 0">
+    <PEN style="solid" width="1" unit="real" color="H16E097" border="H0B9B6B" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Normal traffic" scale_validity="0.000:0.500" att_condition="1 == 10">
+    <PEN style="solid" width="1" unit="real" color="H16E097" border="H0B9B6B" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Low traffic" scale_validity="0.000:0.500" att_condition="1 == 1">
+    <PEN style="solid" width="1" unit="real" color="HFFCE42" border="HF4BF25" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Low traffic" scale_validity="0.000:0.500" att_condition="1 == 11">
+    <PEN style="solid" width="1" unit="real" color="HFFCE42" border="HF4BF25" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Medium traffic" scale_validity="0.000:0.500" att_condition="1 == 2">
+    <PEN style="solid" width="1" unit="real" color="HF24E42" border="H95413A" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Medium traffic" scale_validity="0.000:0.500" att_condition="1 == 12">
+    <PEN style="solid" width="1" unit="real" color="HF24E42" border="H95413A" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="High traffic" scale_validity="0.000:0.500" att_condition="1 == 3">
+    <PEN style="solid" width="1" unit="real" color="HA82626" border="H6F2121" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="High traffic" scale_validity="0.000:0.500" att_condition="1 == 13">
+    <PEN style="solid" width="1" unit="real" color="HA82626" border="H6F2121" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Blocked traffic" scale_validity="0.000:0.500" att_condition="1 == 4">
+    <PEN style="solid" width="1" unit="real" color="H303030" border="H202020" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Blocked traffic" scale_validity="0.000:0.500" att_condition="1 == 14">
+    <PEN style="solid" width="1" unit="real" color="H303030" border="H202020" half_width="left"/>
+   </FORM>
+   <FORM type="open" name="Informative" scale_validity="0.000:0.500" att_condition="1 == 5">
+    <PEN style="solid" width="1" unit="real" color="HBFBFBF" border="HAFAFAF" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="Informative" scale_validity="0.000:0.500" att_condition="1 == 15">
+    <PEN style="solid" width="1" unit="real" color="HBFBFBF" border="HAFAFAF" half_width="left"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6911" name="GPS trace">
+   <FORM type="open" scale_validity="0.000:5.000">    
+    <PEN style="solid" width="4" unit="real" color="HB2B32E2E"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6920" name="Secondary traffic OPEN" scale_visibility="0.000:80.000">
+   <FORM type="open" name="OPEN traffic" att_condition="1 == 0" >
+    <PEN style="solid" width="1" unit="real" color="H16E097" border="H0B9B6B" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="OPEN traffic" att_condition="1 == 10" >
+    <PEN style="solid" width="1" unit="real" color="H16E097" border="H0B9B6B" half_width="left"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6921" name="Secondary traffic CLOSED" scale_visibility="0.000:80.000">
+   <FORM type="open" name="CLOSED traffic" att_condition="1 == 4">
+    <PEN style="solid" width="1" unit="real" color="H303030" border="H202020" half_width="right"/>
+   </FORM>
+   <FORM type="open" name="CLOSED traffic" att_condition="1 == 14">
+    <PEN style="solid" width="1" unit="real" color="H303030" border="H202020" half_width="left"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6950" name="Undetailed Motorway" scale_visibility="115.000:3000.000">
+   <FORM type="open" scale_validity="750.000:0.000">
+    <PEN style="solid" width="2" color="HFFA35C"/>
+   </FORM>
+   <FORM type="open" scale_validity="0.000:750.000">
+	<TEXT fill_color="HCC2929" border="HFFFFFF" att_code="21074">
+     <FONT name="Tahoma" height="15" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+    <PEN style="solid" width="3" color="HFFA35C"/>
+   </FORM>
+  </CLASS>
+  <!--CLASS id="c6992" name="Point address" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="middle">
+     <FONT name="Tahoma" height="11" color="H707070"/>
+    </TEXT>
+   </FORM>
+  </CLASS-->
+  <CLASS id="c6995" name="Truck restrictions" scale_visibility="0.000:1.250">
+   <FORM type="point" att_condition="21573 == 0"> <!-- 0= EB_TRUCK_RESTRICTION_HEIGHT -->
+    <TEXT max_priority="yes" align="center" valign="middle" att_code="21841">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_height_day.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 1"> <!-- 1= EB_TRUCK_RESTRICTION_LENGTH -->
+    <TEXT max_priority="yes" align="center" valign="middle" att_code="21841">
+     <FONT name="Tahoma" height="10" weight="normal" color="H000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_length_day.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" att_condition="21573 == 2"> <!-- 2= EB_TRUCK_RESTRICTION_WIDTH -->
+    <TEXT max_priority="yes" align="center" valign="middle" att_code="21841">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_width_day.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 3"> <!-- 3= EB_TRUCK_RESTRICTION_WEIGHT -->
+    <TEXT max_priority="yes" align="center" valign="middle" att_code="21841">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_weight_day.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 4"> <!-- 4= EB_TRUCK_RESTRICTION_WEIGHT_AXLE -->
+    <TEXT max_priority="yes" align="center" valign="middle" att_code="21841">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_weight_axle_day.png" auto_resizable="no"/>
+   </FORM>
+   <!--FORM type="point" att_condition="21573 == 6"> 6= EB_TRUCK_RESTRICTION_TRAILER
+    <TEXT max_priority="yes" align="center" valign="middle" att_code="21841">
+     <FONT name="Tahoma" height="11" weight="bold" color="H000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_trailer_day.png" auto_resizable="no"/>
+   </FORM-->
+	 <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 9"> <!-- 9= EB_TRUCK_RESTRICTION_MAX-->
+    <BRUSH style="image" src="img/6995_day.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 21"> 		<!-- 21= EB_TRUCK_RESTRICTION_HAZMAT|(EB_HAZMAT_ALL << 4) -->
+    <BRUSH style="image" src="img/6995_hazmat_day.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 37">				<!-- 37 = EB_TRUCK_RESTRICTION_HAZMAT|(EB_HAZMAT_EXPLOSIVE << 4)-->
+    <BRUSH style="image" src="img/6995_explosive_day.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 53"> 		<!-- 53= EB_TRUCK_RESTRICTION_HAZMAT|(EB_HAZMAT_WATER << 4)-->
+    <BRUSH style="image" src="img/6995_water_day.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 == 69"> 		<!-- 69= EB_TRUCK_RESTRICTION_HAZMAT|(EB_US_HAZMAT_EXPLOSIVES << 4) -->
+    <BRUSH style="image" src="img/6995_explosive_day.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 &gt;= 229"> <!-- 229 = EB_TRUCK_RESTRICTION_HAZMAT|(EB_HAZMAT_TUNNEL_CAT_B << 4)-->
+    <TEXT fill_color="HFFFFFFFF" border="HFF000000" max_priority="yes" align="center" valign="bottom" att_code="21841">
+     <FONT name="Tahoma" height="14" weight="normal" color="HFF000000"/>
+    </TEXT>
+    <BRUSH style="image" src="img/6995_hazmat_day.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.000" att_condition="21573 &gt; 69"> <!-- 69= EB_TRUCK_RESTRICTION_HAZMAT|(EB_US_HAZMAT_EXPLOSIVES << 4)-->
+    <BRUSH style="image" src="img/6995_hazmat_day.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c6996" name="Exit number" scale_visibility="0.000:7.500">
+   <FORM type="point">
+    <TEXT fill_color="H0E8C38" border="HFFFFFF" max_priority="yes" align="center" valign="middle" att_code="21325">
+     <FONT name="Tahoma" height="14" weight="normal" color="HFFFFFF"/>
+    </TEXT>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7000" name="Capitals (national &amp; regional)" scale_visibility="175.000:10000.000">
+   <FORM type="point" scale_validity="5000.000:0.000" att_condition="16711 == 0">
+    <BRUSH style="image" src="img/7000_capital.png" auto_resizable="no"/>
+   </FORM>
+	 <FORM type="point" scale_validity="3750.000:5000.000" att_condition="16711 == 0">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7000_capital.png" auto_resizable="no"/>   
+   </FORM>
+   <FORM type="point" scale_validity="0.000:3750.000" att_condition="16711 == 0">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="16" weight="normal"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7000_capital.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" scale_validity="3750.000:5000.000" att_condition="20551 == 1">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:3750.000" att_condition="20551 == 1">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="15" weight="normal"/>
+    </TEXT>
+    <BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:2500.000" att_condition="20551 == 2">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+    <BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/>
+   </FORM>
+   <!--FORM type="point" scale_validity="0.000:2000.000" att_condition="16711 == 1">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:625.000" att_condition="16711 == 7">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+   </FORM-->
+   <FORM type="point" scale_validity="0.000:1250.000" att_condition="20551 == 3">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+   <FORM type="point" scale_validity="0.000:375.000" att_condition="20551 == 4">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="11" weight="normal"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+   <FORM type="point" scale_validity="0.000:250.000">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+  </CLASS>
+  <CLASS id="c7100" name="Police Radars" visibility="no" scale_visibility="0.000:3.750">
+   <FORM type="point" name="Mobile Radars" att_condition="1 == 0">
+    <BRUSH style="image" src="img/7100_0.png"/>
+   </FORM>
+   <FORM type="point" name="Fixed Radars" att_condition="1 == 1">
+    <BRUSH style="image" src="img/7100_1.png"/>
+   </FORM>
+   <FORM type="point" name="Light Radars" att_condition="1 == 2">
+    <BRUSH style="image" src="img/7100_2.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7200" name="Landmark (TA)" scale_visibility="0.000:2.500">
+   <FORM type="point" scale_validity="1.250:0.000">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+    <BRUSH style="embedded_img" chromakey="HFF00FF" scale_1_1="0.54"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+    <BRUSH style="embedded_img" chromakey="HFF00FF" scale_1_1="0.54"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7201" name="Landmark (NT)" scale_visibility="0.000:2.500">
+   <FORM type="point" scale_validity="1.250:0.000">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+    <BRUSH style="embedded_img" chromakey="H000000" scale_1_1="0.8"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+    <BRUSH style="embedded_img" chromakey="H000000" scale_1_1="0.8"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7210" name="3DLandmark" scale_visibility="0.000:6.250">
+   <FORM type="mesh">
+		<BRUSH style="embedded_img"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7310" name="Vehicle repair facility" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7310_car_repair.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7311" name="Petrol station" visibility="no" scale_visibility="0.000:5.000">
+   <FORM type="point" scale_validity="3.750:0.000">
+    <BRUSH style="image" src="img/7311_petrol.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="1.250:3.750">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7311_petrol.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7311_petrol.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7312" name="Rent a car facility" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7312_rent_a_car.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7313" name="Parking garage" visibility="no" scale_visibility="0.000:2.500">
+   <FORM type="point" scale_validity="1.250:0.000">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7313_parking_garage.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7313_parking_garage.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7314" name="Hotel or motel" visibility="no" scale_visibility="0.000:0.650">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7314_hotel.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7315" name="Restaurant" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7315_restaurant.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7316" name="Tourist office" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7316_tourist_office.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7317" name="Museum" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7317_museum.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7318" name="Theatre" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7318_theatre.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7319" name="Cultural centre" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7319_cultural_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7320" name="Sport" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7320_sport.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7321" name="Hospital polyclinic" visibility="no" scale_visibility="0.000:5.000">
+   <FORM type="point" scale_validity="3.750:0.000">
+    <BRUSH style="image" src="img/7321_hospital.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="1.250:3.750">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7321_hospital.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7321_hospital.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7322" name="Police station" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7322_police.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7323" name="City hall" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7323_city_hall.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7324" name="Post office" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7324_post_office.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7326" name="Pharmacy" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7326_pharmacy.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7328" name="Bank" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7328_bank.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7334" name="Ski resort" visibility="no" scale_visibility="0.000:6.500">
+   <FORM type="point" scale_validity="1.250:0.000">
+    <BRUSH style="image" src="img/7334_ski_resort.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7334_ski_resort.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7337" name="Panoramic view" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7337_panoramic_view.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7338" name="Swimming pool" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7338_swimming_pool.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7339" name="Worship" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7339_worship.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7352" name="Ferry terminal" visibility="no" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7352_ferry_terminal.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7356" name="Airline access" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7356_airline_access.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7360" name="Camping" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7360_camping.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7365" name="Embassy" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7365_embassy.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7366" name="Frontier crossing" visibility="no" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7366_frontier.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7367" name="Government office" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7367_government_office.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7369" name="Open parking area" visibility="no" scale_visibility="0.000:3.750">
+   <FORM type="point" scale_validity="1.250:0.000">
+    <BRUSH style="image" src="img/7369_open_parking.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7369_open_parking.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7372" name="School" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7372_school.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7373" name="Shopping centre" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7373_shopping_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7374" name="Stadium" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7374_stadium.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7376" name="Tourist attraction" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7376_tourist_attraction.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7377" name="University" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7377_university.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7378" name="Business facility" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7378_business_facility.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7379" name="City center" scale_visibility="1.250:175.000">
+   <FORM type="point" scale_validity="3.750:0.000" att_condition="20551 == 1">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="20" weight="normal"/>
+    </TEXT>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:3.750" att_condition="20551 == 1">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="16" weight="normal"/>
+    </TEXT>
+   </FORM>
+   <FORM type="point" att_condition="20551 == 2">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="16" weight="normal"/>
+    </TEXT>
+   </FORM>
+   <FORM type="point" att_condition="20551 == 3">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="14" weight="normal"/>
+    </TEXT>
+   </FORM>
+	<FORM type="point" att_condition="20551 == 4">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+   </FORM>
+	<FORM type="point" att_condition="20551 == 5">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+   <FORM type="point" scale_validity="0.000:75.000" att_condition="20551 == 6">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+   <FORM type="point" scale_validity="0.000:60.000" att_condition="20551 == 7">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="11" weight="normal"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+   <FORM type="point" scale_validity="0.000:25.000">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="11" weight="normal" color="H000000"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+  </CLASS>
+  <CLASS id="c7380" name="Railway station" visibility="no" scale_visibility="0.000:3.750">
+   <FORM type="point" scale_validity="1.250:0.000">
+    <BRUSH style="image" src="img/7380_railway.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7380_railway.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7381" name="Hamlet" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="top">
+     <FONT name="Tahoma" height="12" weight="normal" color="H404040"/>
+    </TEXT>
+    <!--BRUSH style="image" src="img/bullet_black_small.png" auto_resizable="no"/-->
+   </FORM>
+  </CLASS>
+  <CLASS id="c7383" name="Airport" visibility="no" scale_visibility="0.000:50.000">
+   <FORM type="point" scale_validity="3.750:0.000">
+    <BRUSH style="image" src="img/7383_airport.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:3.750">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7383_airport.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7384" name="Bus station" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7384_bus_station.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7385" name="Exhibition center" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7385_exhibition_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7387" name="Park and ride" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7387_park_and_ride.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c7395" name="Rest area" visibility="no" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/7395_rest_area.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9000" name="Named place" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9000_named_place.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9001" name="Square" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9001_square.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9002" name="Residence" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9002_residence.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9101" name="Golf course" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9101_golf_course.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9102" name="ATM" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9102_atm.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9105" name="Grocery store" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9105_grocery_store.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9107" name="Library" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9107_library.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9108" name="Marina" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9108_marina.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9110" name="Commuter rail station" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9110_commuter_rail_station.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9111" name="Court house" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9111_court_house.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9113" name="Historical monument" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9113_historical_monument.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9118" name="Bowling" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9118_bowling_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9119" name="Casino" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9119_casino.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9120" name="Cinema" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9120_cinema.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9121" name="Ice skating ring" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9121_ice_skating_ring.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9122" name="Night life" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9122_nightlife.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9123" name="Public sports airport" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9123_public_sports_airport.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9124" name="Sports center" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9124_sports_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9125" name="Winery" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9125_winery.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9126" name="Automobile dealershp" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9126_auto_dealershp.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9352" name="Company" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9352_company.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9357" name="Beach" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9357_beach.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9361" name="Shop" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9361_shop.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9362" name="Park and recreation area" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9362_park_recreation_area.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9364" name="Mountain peak" visibility="no" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9364_moutain_peak.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9365" name="Opera" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9365_opera.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9369" name="Tennis court" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9369_tennis_court.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9372" name="Music center" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9372_music_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9373" name="Doctor" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9373_doctor.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9374" name="Dentist" visibility="no" scale_visibility="0.000:0.375">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9374_dentist.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9375" name="Veterinarian" visibility="no" scale_visibility="0.000:0.625">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9375_veterinarian.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9377" name="Convention center" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9377_convention_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9378" name="Leisure center" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9378_leisure_center.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9390" name="Cemetery" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9390_cemetery.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9598" name="EV charging pool" scale_visibility="0.000:80.000">
+    <FORM type="point" scale_validity="0.500:0.000">
+      <BRUSH style="image" src="img/9598_charging_pool.png"/>
+    </FORM>
+    <FORM type="point" scale_validity="0.000:0.500">
+      <TEXT outline_color="HFFFFFF" max_priority="yes" align="center" valign="bottom">
+        <FONT name="Tahoma" height="10" weight="normal" color="H000000"/>
+      </TEXT>
+      <BRUSH style="image" src="img/9598_charging_pool.png"/>
+    </FORM>
+  </CLASS>
+  <CLASS id="c9715" name="Industrial" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9715_industrial.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9902" name="Amusement park" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9902_amusement_park.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9927" name="Zoo" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9927_zoo.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9930" name="Rent-a-car parking" visibility="no" scale_visibility="0.000:1.250">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9930_rent_a_car_parking.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9935" name="Mountain pass" visibility="no" scale_visibility="0.000:2.500">
+   <FORM type="point">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/9935_mountain_pass.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c9990" name="Traffic POI" scale_visibility="0.000:7.500">
+   <FORM type="point" name="congestion" scale_validity="0.000:5.000" att_condition="1 == 0">
+    <BRUSH style="image" src="img/tmc/congestion.png"/>
+   </FORM>
+   <FORM type="point" name="road condition" scale_validity="0.000:2.500" att_condition="1 == 1">
+    <BRUSH style="image" src="img/tmc/road_condition.png"/>
+   </FORM>
+   <FORM type="point" name="work" scale_validity="0.000:2.500" att_condition="1 == 2">
+    <BRUSH style="image" src="img/tmc/work.png"/>
+   </FORM>
+   <FORM type="point" name="road blocled" att_condition="1 == 3">
+    <BRUSH style="image" src="img/tmc/road_blocked.png"/>
+   </FORM>
+   <FORM type="point" name="accident" att_condition="1 == 4">
+    <BRUSH style="image" src="img/tmc/accident.png"/>
+   </FORM>
+   <FORM type="point" name="incident" scale_validity="0.000:5.000" att_condition="1 == 5">
+    <BRUSH style="image" src="img/tmc/incident.png"/>
+   </FORM>
+   <FORM type="point" name="info" scale_validity="0.000:2.500" att_condition="1 == 6">
+    <BRUSH style="image" src="img/tmc/info.png"/>
+   </FORM>
+   <FORM type="point" name="lane restriction" scale_validity="0.000:2.500" att_condition="1 == 7">
+    <BRUSH style="image" src="img/tmc/lane_restriction.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c10001" name="Route Start">
+   <FORM type="point">
+    <BRUSH style="image" src="img/routestart.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c10002" name="Route Stop">
+   <FORM type="point">
+    <BRUSH style="image" src="img/routestop.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c10003" name="MyPOI" scale_visibility="0.000:12.500">
+   <FORM type="point" scale_validity="3.750:0.000">
+    <BRUSH style="image" src="img/10003_mypoi.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.500:3.750">
+    <TEXT outline_color="HF8F8F8" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/10003_mypoi.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.000:1.250">
+    <TEXT outline_color="HF8F8F8" max_priority="yes" align="center" valign="bottom">
+     <FONT name="Tahoma" height="14" weight="bold"/>
+    </TEXT>
+    <BRUSH style="image" src="img/10003_mypoi.png"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c10004" name="Route Via">
+   <FORM type="point">
+    <BRUSH style="image" src="img/routevia.png"/>
+   </FORM>
+  </CLASS> 
+  
+  <CLASS id="c12000" name="Isochrone">
+   <FORM type="closed" scale_validity="9.000:0.000">
+    <PEN style="solid" width="3" color="HBF222533"/>
+    <BRUSH style="solid" color="H594572A7"/>
+   </FORM>
+   <FORM type="closed" scale_validity="0.000:9.000">
+    <PEN style="solid" width="2" color="HBF222533"/>
+    <BRUSH style="solid" color="H594572A7"/>
+   </FORM>
+  </CLASS>
+  <CLASS id="c12100" name="Public Charging Station" scale_visibility="0.000:40.000">
+   <FORM type="point">
+    <BRUSH style="image" src="img/12100_public_charging_station_40x40.png"/>
+   </FORM>
+   <!--FORM type="point" scale_validity="0.000:0.500">
+    <BRUSH style="image" src="img/12100_public_charging_station_40x40.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.500:1.500">
+    <BRUSH style="image" src="img/12100_public_charging_station_20x20.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="1.500:0.000">
+    <BRUSH style="image" src="img/12100_public_charging_station_8x8.png"/>
+   </FORM-->
+  </CLASS>
+  <CLASS id="c12200" name="Private Charging Station" scale_visibility="0.000:40.000">
+    <FORM type="point">
+      <BRUSH style="image" src="img/12200_private_charging_station_40x40.png"/>
+    </FORM>
+   <!--FORM type="point" scale_validity="0.000:0.500">
+    <BRUSH style="image" src="img/12200_private_charging_station_40x40.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="0.500:1.500">
+    <BRUSH style="image" src="img/12200_private_charging_station_20x20.png"/>
+   </FORM>
+   <FORM type="point" scale_validity="1.500:0.000">
+    <BRUSH style="image" src="img/12200_private_charging_station_8x8.png"/>
+   </FORM-->
+  </CLASS>
+  
+ </CLASSES>
+</GRAPHIC_CHART>

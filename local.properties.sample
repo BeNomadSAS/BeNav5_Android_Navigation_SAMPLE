@@ -1,0 +1,17 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Copy this file to `local.properties` and fill in the values below.
+# `local.properties` is git-ignored and must NEVER be committed.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Android SDK location (added automatically by Android Studio).
+#sdk.dir=/path/to/Android/sdk
+
+# ── BeNomad Nexus Maven repository ──
+NEXUS_URL=http://your-nexus-host/repository/maven-releases
+NEXUS_USERNAME=your-nexus-username
+NEXUS_PASSWORD=your-nexus-password
+
+# ── Optional dev convenience ────────────────────────────────────────────────
+# Pre-fills the in-app license entry screen. Leave empty to type the license at
+# runtime. The purchase UUID is provided by BeNomad.
+MSDK_PURCHASE_UUID=

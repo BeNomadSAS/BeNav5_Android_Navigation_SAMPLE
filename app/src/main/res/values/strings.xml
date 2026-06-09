@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BeNomad Sample</string>
+
+    <!-- Consent -->
+    <string name="consent_title">License &amp; terms</string>
+    <string name="consent_body">This sample demonstrates the BeNomad mobile SDK. Replace this placeholder text with your own license agreement and terms of use. By continuing you confirm that you hold a valid BeNomad license and agree to its terms.\n\nThe SDK downloads map data and uses your location to provide navigation. Map data is provided under your BeNomad license.</string>
+    <string name="consent_agree">I agree</string>
+
+    <!-- License entry -->
+    <string name="license_title">Enter your license</string>
+    <string name="license_subtitle">Provide the BeNomad purchase UUID supplied to you. It activates the SDK and determines which map data is available.</string>
+    <string name="license_uuid_label">Purchase UUID</string>
+    <string name="license_continue">Continue</string>
+
+    <!-- Location permission -->
+    <string name="permission_location_title">Location access</string>
+    <string name="permission_location_body">The app needs your precise location to show your position on the map and to provide turn-by-turn guidance.</string>
+    <string name="permission_location_grant">Grant location access</string>
+    <string name="permission_open_settings">Open settings</string>
+
+    <!-- Notification permission -->
+    <string name="permission_notification_title">Notifications</string>
+    <string name="permission_notification_body">Allow notifications so guidance can keep running in the background via a foreground-service notification. This is optional.</string>
+    <string name="permission_notification_grant">Allow notifications</string>
+    <string name="permission_skip">Not now</string>
+
+    <!-- Splash / initialization -->
+    <string name="splash_initializing">Initializing…</string>
+    <string name="splash_downloading_map">Downloading map… %1$d%%</string>
+    <string name="splash_extracting_map">Extracting map… %1$d%%</string>
+    <string name="splash_error_title">Initialization failed</string>
+    <string name="splash_retry">Retry</string>
+
+    <!-- Map -->
+    <string name="map_zoom_in">Zoom in</string>
+    <string name="map_zoom_out">Zoom out</string>
+    <string name="map_reset_north">Reset to north</string>
+    <string name="map_center">Center on my location</string>
+    <string name="map_streaming">Streaming map…</string>
+    <string name="map_cache_offline">Cache France offline</string>
+    <string name="map_offline_started">Offline download started</string>
+    <string name="map_location_unavailable">Location unavailable</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search a destination</string>
+    <string name="search_clear">Clear search</string>
+    <string name="destination_clear">Clear</string>
+
+    <!-- Route preview -->
+    <string name="map_plan_route">Plan route</string>
+    <string name="route_back">Back</string>
+    <string name="route_destination">Destination</string>
+    <string name="route_computing">Computing route…</string>
+    <string name="route_start">Start</string>
+    <string name="route_start_demo">Start (demo)</string>
+    <string name="route_sheet">Route sheet</string>
+
+    <!-- Guidance -->
+    <string name="guidance_notification_text">Navigation in progress</string>
+    <string name="guidance_recenter">Re-center</string>
+    <string name="guidance_mute">Mute voice</string>
+    <string name="guidance_unmute">Unmute voice</string>
+    <string name="guidance_stop">Stop</string>
+    <string name="guidance_eta">ETA %1$s</string>
+    <string name="guidance_arrived">You have arrived</string>
+    <string name="guidance_done">Done</string>
+    <string name="guidance_error">Couldn\'t start navigation. Please try again.</string>
+</resources>

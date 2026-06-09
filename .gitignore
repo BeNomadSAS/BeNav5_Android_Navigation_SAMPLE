@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+/local.properties
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+/app/build
+/.kotlin
+
+# Internal scratch notes produced while building this sample (not part of the deliverable).
+/.exploration
