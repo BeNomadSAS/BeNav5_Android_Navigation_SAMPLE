@@ -9,9 +9,6 @@
 agp = "8.13.0"
 kotlin = "2.2.20"
 
-# BeNomad mobile SDK. NOTE: the exact coordinate depends on the publish branch:
-#   release  -> "2.7.0.1"        beta -> "2.7.0.1-beta"        develop -> "2.6.1.2-SNAPSHOT"
-# Set this to whatever your Nexus actually hosts.
 msdk = "2.7.0.1"
 
 coreKtx = "1.15.0"
